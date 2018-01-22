@@ -3,11 +3,10 @@
 'use strict';
 
 const
-express = require('express');
+  express = require('express');
 
 exports.open_homepage = (req, res) => res.render('index');
 
 exports.send_file_data = (req, res) => {
-  const fileData = {};
-  res.json(fileData);
+  res.json({filename: req.file.originalname, type: req.file.mimetype, size: req.file.size});
 };

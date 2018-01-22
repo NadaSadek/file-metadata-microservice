@@ -1,0 +1,55 @@
+$main-background-color: #2E4053;
+$main-text-color: #fff;
+$main-font: 'Metamorphous', sans-serif, cursive;
+$body-padding-top: 20px;
+$form-width: 30%;
+$form-margin: 20px;
+$btn-main-color: #7DCEA0;
+$btn-border-color: #d6bde3;
+$btn-hover-color: #0B5345;
+$btn-active-color: #0B5345;
+$btn-scale-factor: 0.7;
+$btn-width: 40%;
+
+@mixin scale($value) {
+  -webkit-transform: scale($value);
+  -moz-transform: scale($value);
+  -ms-transform: scale($value);
+  -o-transform: scale($value);
+
+}
+@mixin btn-style {
+  background-color: $btn-main-color;
+  border-color: $btn-border-color;
+  color: $main-text-color;
+
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+  &:active {
+    background-color: $btn-active-color;
+    transform: scale($btn-scale-factor);
+  }
+}
+
+body {
+  padding-top: $body-padding-top;
+  background-color: $main-background-color;
+  color: $main-text-color;
+  font-family: $main-font;
+  text-align: center;
+
+  form {
+    width: $form-width;
+    padding-top: 10%;
+    margin: auto;
+    border-radius: 1px;
+
+
+    .btn {
+      @include btn-style();
+    }
+
+  }
+
+}
