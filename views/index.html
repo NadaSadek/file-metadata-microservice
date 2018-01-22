@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>File Metadata Microservice</title>
+      <link rel="stylesheet" href="../scripts/bootstrap/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Homenaje" rel="stylesheet">
+      <link href="../stylesheets/style.css" rel="stylesheet" type="text/css">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+      <script src="../scripts/bootstrap/js/bootstrap.min.js"></script>
+   </head>
+
+   <body>
+      <div class="container">
+         <h1>Please Upload a file</h1>
+         <div class="d-flex flex-row">
+          <form action="/api/exercise/new-user" method="post" class="form-group p-2">
+            <h3>upload:</h3>
+            <input type="text"  class="form-control form-element"  name="username" placeholder="username" required>
+            <input type="submit" class="btn form-element" value="Submit">
+          </form>
+        </div>
+      </div>
+   </body>
+
+</html>
