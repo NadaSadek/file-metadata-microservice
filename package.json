@@ -9,7 +9,7 @@
   "author": "Nada Sadek",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "express": "^4.16.2",
     "moment": "^2.20.1",
     "mongodb": "^3.1.13",
